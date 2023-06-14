@@ -1,0 +1,33 @@
+{
+  "name": "@sefr/application-design",
+  "version": "0.0.1",
+  "description": "Repository to reference examples of application design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "three-layers/*",
+    "cqrs/*",
+    "hexagonal-architecture/*",
+    "clean-architecture/*",
+    "onion-architecture/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sefrancois/application-design.git"
+  },
+  "author": "SEFR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sefrancois/application-design/issues"
+  },
+  "homepage": "https://github.com/Sefrancois/application-design#readme",
+  "devDependencies": {
+    "@sefr/test": "~1.2.6",
+    "@types/node": "~20.3.1",
+    "@typescript-eslint/eslint-plugin": "~5.59.11",
+    "eslint": "~8.42.0",
+    "typescript": "~5.1.3"
+  }
+}
