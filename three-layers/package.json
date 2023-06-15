@@ -1,0 +1,23 @@
+{
+  "name": "three-layers",
+  "version": "1.0.0",
+  "description": "Example of three-layers application design",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sefrancois/application-design.git"
+  },
+  "keywords": [
+    "three-layers",
+    "mvc"
+  ],
+  "author": "SEFR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sefrancois/application-design/issues"
+  },
+  "homepage": "https://github.com/Sefrancois/application-design#readme"
+}

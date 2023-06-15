@@ -1,0 +1,5 @@
+{
+  "extension": ["ts"],
+  "require": ["ts-node/register", "tsconfig-paths/register"],
+  "spec": ["**/test/**/*.test.ts"]
+}
