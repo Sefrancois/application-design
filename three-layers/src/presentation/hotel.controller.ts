@@ -31,7 +31,7 @@ export class HotelController {
 
 		operationResult.isFailure
 			? response.status(400).json({ message: operationResult.value!.message, stack: operationResult.value!.stack }).end()
-			: response.status(201).send().end();
+			: response.status(202).send().end();
 
 		next();
 	}

@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start:three-layers": "nodemon --require tsconfig-paths/register ./three-layers/src/main.ts",
+    "start:hexagonal-architecture": "nodemon --require tsconfig-paths/register ./hexagonal-architecture/src/main.ts",
     "test": "mocha"
   },
   "workspaces": [

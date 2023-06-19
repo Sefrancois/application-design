@@ -1,15 +1,17 @@
 {
-  "name": "three-layers",
+  "name": "hexagonal-architecture",
   "version": "1.0.0",
-  "description": "Example of three-layers application design",
+  "description": "Example of implementation of hexgonal architecture",
   "main": "src/main.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sefrancois/application-design.git"
   },
   "keywords": [
-    "three-layers",
-    "mvc"
+    "hexagonal",
+    "hexagonal-architecture",
+    "alistair",
+    "cockburn"
   ],
   "author": "SEFR",
   "license": "MIT",

@@ -1,5 +1,8 @@
 {
   "extension": ["ts"],
   "require": ["ts-node/register", "tsconfig-paths/register"],
-  "spec": ["**/test/**/*.test.ts"]
+  "spec": [
+    "three-layers/test/**/*.test.ts",
+    "hexagonal-architecture/test/**/*.test.ts"
+  ]
 }
