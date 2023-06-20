@@ -17,16 +17,16 @@ export const routes: Array<Route> = [
 	{
 		method: "get",
 		path: "/rooms",
-		controller: hotelController.getAllRoomsRequest.bind(hotelController)
+		controller: hotelController.getAllRoomsRequest.bind(hotelController),
 	},
 	{
 		method: "get",
 		path: "/available-rooms",
-		controller: hotelController.getAvailableRoomsForPeriodRequest.bind(hotelController)
+		controller: hotelController.getAvailableRoomsForPeriodRequest.bind(hotelController),
 	},
 	{
 		method: "post",
 		path: "/book-a-room",
-		controller: hotelController.postBookARoomRequest.bind(hotelController)
+		controller: hotelController.postBookARoomRequest.bind(hotelController),
 	},
 ];

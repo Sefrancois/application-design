@@ -20,11 +20,11 @@ export const routes: Array<Route> = [
 	{
 		method: "get",
 		path: "/available-rooms",
-		controller: hotelPrimaryAdapter.getAllAvailableHotelRoomsForPeriod.bind(hotelPrimaryAdapter)
+		controller: hotelPrimaryAdapter.getAllAvailableHotelRoomsForPeriod.bind(hotelPrimaryAdapter),
 	},
 	{
 		method: "post",
 		path: "/book-a-room",
-		controller: hotelPrimaryAdapter.postBookARoom.bind(hotelPrimaryAdapter)
+		controller: hotelPrimaryAdapter.postBookARoom.bind(hotelPrimaryAdapter),
 	},
 ];

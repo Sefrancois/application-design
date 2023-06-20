@@ -18,23 +18,27 @@ export class HotelPrimaryAdapter implements HotelPrimaryPort {
 	public getAllAvailableHotelRoomsForPeriod(request: Request, response: Response, next: NextFunction): void {
 		const { startDate, endDate } = {
 			startDate: new Date(request.query.startDate as string || ""),
-			endDate: new Date(request.query.endDate as string || "")
+			endDate: new Date(request.query.endDate as string || ""),
 		};
 		const hotel = this.hotelSecondaryPort.getHotel();
-		response.status(200).json(hotel.getAllAvailableRoomsForPeriod(startDate, endDate))
+		response.status(200).json(hotel.getAllAvailableRoomsForPeriod(startDate, endDate));
+		next();
 	}
 
 	public postBookARoom(request: Request, response: Response, next: NextFunction): void {
+		const body = <{roomNumber: number, startDate: string, endDate: string}>request.body;
 		const { roomNumber, startDate, endDate } = {
-			roomNumber: request.body.roomNumber,
-			startDate: new Date(request.body.startDate as string || ""),
-			endDate: new Date(request.body.endDate as string || "")
+			roomNumber: body.roomNumber,
+			startDate: new Date(body.startDate || ""),
+			endDate: new Date(body.endDate || ""),
 		};
 		const hotel = this.hotelSecondaryPort.getHotel();
 		const operationResult = hotel.bookARoom(roomNumber, startDate, endDate);
 
 		operationResult.isFailure
-			? response.status(400).json({ message: operationResult.value!.message, stack: operationResult.value!.stack }).end()
+			? response.status(400).json({ message: (<Error>operationResult.value).message, stack: (<Error>operationResult.value).stack }).end()
 			: response.status(202).json().end();
+
+		next();
 	}
 }

@@ -1,7 +1,6 @@
 import { Room } from "@hexagonal-architecture/core/room";
 import { Booking } from "@hexagonal-architecture/core/booking";
 import { Result } from "@sefr/result";
-import { BookingModel } from "@three-layers/persistance/model/booking.model";
 
 export class Hotel {
 	private readonly rooms: Array<Room>;

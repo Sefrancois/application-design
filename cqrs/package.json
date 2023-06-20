@@ -1,0 +1,25 @@
+{
+  "name": "cqrs",
+  "version": "1.0.0",
+  "description": "Example of implementation of application design known as Command Query Responsibility Segregation",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sefrancois/application-design.git"
+  },
+  "keywords": [
+    "cqrs",
+    "command",
+    "query",
+    "command-query"
+  ],
+  "author": "SEFR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sefrancois/application-design/issues"
+  },
+  "homepage": "https://github.com/Sefrancois/application-design#readme"
+}
