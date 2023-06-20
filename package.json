@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint {hexagonal-architecture,three-layers}/src/**/*.ts",
-    "start:three-layers": "nodemon --require tsconfig-paths/register ./three-layers/src/main.ts",
+    "lint": "eslint {clean-architecture,hexagonal-architecture,three-layers}/src/**/*.ts",
+    "start:clean-architecture": "nodemon --require tsconfig-paths/register ./clean-architecture/src/main.ts",
     "start:hexagonal-architecture": "nodemon --require tsconfig-paths/register ./hexagonal-architecture/src/main.ts",
+    "start:three-layers": "nodemon --require tsconfig-paths/register ./three-layers/src/main.ts",
     "test": "mocha"
   },
   "workspaces": [
