@@ -1,8 +1,8 @@
 import { expect } from "@sefr/test";
 import { HotelService } from "@three-layers/logic/hotel.service";
-import { RoomModel } from "@three-layers/persistance/model/room.model";
-import { HotelDao } from "@three-layers/persistance/dao/hotel.dao";
-import { BookingModel } from "@three-layers/persistance/model/booking.model";
+import { RoomModel } from "@three-layers/persistence/model/room.model";
+import { HotelDao } from "@three-layers/persistence/dao/hotel.dao";
+import { BookingModel } from "@three-layers/persistence/model/booking.model";
 
 let startDate: Date;
 let endDate: Date;

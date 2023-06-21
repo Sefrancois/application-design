@@ -1,5 +1,5 @@
-import { RoomModel } from "@three-layers/persistance/model/room.model";
-import { BookingModel } from "@three-layers/persistance/model/booking.model";
+import { RoomModel } from "@three-layers/persistence/model/room.model";
+import { BookingModel } from "@three-layers/persistence/model/booking.model";
 
 export class HotelDao {
 	public rooms: Array<RoomModel>;

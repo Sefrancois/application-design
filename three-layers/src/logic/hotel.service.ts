@@ -1,7 +1,7 @@
 import { Result } from "@sefr/result";
-import { RoomModel } from "@three-layers/persistance/model/room.model";
-import { HotelDao } from "@three-layers/persistance/dao/hotel.dao";
-import { BookingModel } from "@three-layers/persistance/model/booking.model";
+import { RoomModel } from "@three-layers/persistence/model/room.model";
+import { HotelDao } from "@three-layers/persistence/dao/hotel.dao";
+import { BookingModel } from "@three-layers/persistence/model/booking.model";
 
 export class HotelService {
 	private readonly hotelDao: HotelDao;
