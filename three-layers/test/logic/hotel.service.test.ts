@@ -9,7 +9,7 @@ let endDate: Date;
 let hotelDao: HotelDao;
 let hotelService: HotelService;
 
-describe("HotelServiceTest", () => {
+describe("Three-Layers | HotelServiceTest", () => {
 	beforeEach(() => {
 		// Given
 		hotelDao = new HotelDao([

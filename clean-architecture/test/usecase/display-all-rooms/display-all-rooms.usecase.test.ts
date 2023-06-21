@@ -3,7 +3,7 @@ import { DisplayAllRooms } from "@clean-architecture/usecase/display-all-rooms/d
 import { RoomsXmlPresenter } from "@clean-architecture/presenter/rooms-xml.presenter";
 import { FakeHotelInMemoryDatasource } from "@clean-architecture/fake/fake-hotel-in-memory.datasource";
 
-describe("DisplayAllRoomsUsecase", () => {
+describe("Clean Architecture | DisplayAllRoomsTest", () => {
 	it("returns all hotel rooms", () => {
 		// Given
 		const hotelDatasource = new FakeHotelInMemoryDatasource();

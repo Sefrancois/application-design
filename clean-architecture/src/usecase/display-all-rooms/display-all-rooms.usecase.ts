@@ -13,6 +13,6 @@ export class DisplayAllRooms implements Usecase<string> {
 
 	public run(): string {
 		const hotel = this.hotelDatasource.getHotel();
-		return this.roomsPresenter.present(hotel);
+		return this.roomsPresenter.present(hotel.getAllRooms());
 	}
 }

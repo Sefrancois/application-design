@@ -1,0 +1,28 @@
+{
+  "name": "onion-architecture",
+  "version": "1.0.0",
+  "description": "Example of implementation of Onion Architecture",
+  "main": "src/main.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sefrancois/application-design.git"
+  },
+  "keywords": [
+    "onion",
+    "onion-architecture",
+    "layered-architecture",
+    "layered"
+  ],
+  "author": "SEFR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sefrancois/application-design/issues"
+  },
+  "homepage": "https://github.com/Sefrancois/application-design#readme"
+}

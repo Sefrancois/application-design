@@ -3,6 +3,8 @@
   "require": ["ts-node/register", "tsconfig-paths/register"],
   "spec": [
     "three-layers/test/**/*.test.ts",
-    "hexagonal-architecture/test/**/*.test.ts"
+    "hexagonal-architecture/test/**/*.test.ts",
+    "clean-architecture/test/**/*.test.ts",
+    "onion-architecture/test/**/*.test.ts"
   ]
 }

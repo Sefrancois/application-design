@@ -1,21 +1,17 @@
 import { expect } from "@sefr/test";
+import { DisplayAllRooms } from "@clean-architecture/usecase/display-all-rooms/display-all-rooms.usecase";
 import { RoomsXmlPresenter } from "@clean-architecture/presenter/rooms-xml.presenter";
 import { FakeHotelInMemoryDatasource } from "@clean-architecture/fake/fake-hotel-in-memory.datasource";
-import {
-	DisplayAllAvailableRoomsForPeriod
-} from "@clean-architecture/usecase/display-available-rooms-for-period/display-all-available-rooms-for-period.usecase";
 
-describe("Clean Architecture | DisplayAllAvailableRoomsForPeriodTest", () => {
-	it("returns all available hotel rooms for period", () => {
+describe("Onion Architecture | DisplayAllRoomsTest", () => {
+	it("returns all hotel rooms", () => {
 		// Given
 		const hotelDatasource = new FakeHotelInMemoryDatasource();
 		const roomsPresenter = new RoomsXmlPresenter();
-		const displayAllAvailableRoomsForPeriod = new DisplayAllAvailableRoomsForPeriod(hotelDatasource, roomsPresenter);
-		const startDate = new Date("2023-06-01");
-		const endDate = new Date("2023-06-08")
+		const displayAllRooms = new DisplayAllRooms(hotelDatasource, roomsPresenter);
 
 		// When
-		const result = displayAllAvailableRoomsForPeriod.run(startDate, endDate);
+		const result = displayAllRooms.run();
 
 		// Then
 		const expected = getExpectedXml();
@@ -28,6 +24,11 @@ function getExpectedXml(): string {
     <room>
         <capacity>2</capacity>
         <description>1 king size bed - A/C - Wi-Fi - private bathroom - wheelchair accessible</description>
+        <floor>1</floor>
+    </room>
+    <room>
+        <capacity>4</capacity>
+        <description>2 queen size beds - A/C - Wi-Fi - private bathroom - wheelchair accessible</description>
         <floor>1</floor>
     </room>
 </rooms>`;

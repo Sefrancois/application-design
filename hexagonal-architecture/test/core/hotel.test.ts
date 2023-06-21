@@ -7,7 +7,7 @@ let startDate: Date;
 let endDate: Date;
 let hotel: Hotel;
 
-describe("HotelTest", () => {
+describe("Hexagonal Architecture | HotelTest", () => {
 	beforeEach(() => {
 		// Given
 		startDate = new Date("2023-06-01");

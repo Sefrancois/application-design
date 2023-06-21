@@ -1,15 +1,15 @@
 import { expect } from "@sefr/test";
-import { BookARoom } from "@clean-architecture/usecase/book-a-room/book-a-room.usecase";
-import { Booking } from "@clean-architecture/entities/booking";
-import { HotelDatasource } from "@clean-architecture/usecase/hotel.datasource";
-import { FakeHotelInMemoryDatasource } from "@clean-architecture/fake/fake-hotel-in-memory.datasource";
+import { HotelDatasource } from "@onion-architecture/domain/service/hotel.datasource";
+import { BookARoom } from "@onion-architecture/application-service/book-a-room.usecase";
+import { FakeHotelInMemoryDatasource } from "@onion-architecture/fake/fake-hotel-in-memory.datasource";
+import { Booking } from "@onion-architecture/domain/model/booking";
 
 let startDate: Date;
 let endDate: Date;
 let hotelDatasource: HotelDatasource;
 let bookARoom: BookARoom;
 
-describe("Clean Architecture | BookARoomTest", () => {
+describe("Onion Architecture | BookARoomTest", () => {
 	beforeEach(() => {
 		// Given
 		startDate = new Date("2023-06-01");
