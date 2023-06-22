@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { HotelInMemoryDatasource } from "@onion-architecture/infrastructure/gateway/hotel-in-memory.datasource";
 import { DisplayAllRooms } from "@onion-architecture/application-service/display-all-rooms.usecase";
 import {
-	DisplayAllAvailableRoomsForPeriod
+	DisplayAllAvailableRoomsForPeriod,
 } from "@onion-architecture/application-service/display-all-available-rooms-for-period.usecase";
 import { BookARoom } from "@onion-architecture/application-service/book-a-room.usecase";
 import { HotelController } from "@onion-architecture/user-interface/hotel.controller";
