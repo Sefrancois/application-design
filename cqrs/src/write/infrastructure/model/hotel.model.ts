@@ -1,5 +1,5 @@
-import { RoomModel } from "@onion-architecture/infrastructure/model/room.model";
-import { BookingModel } from "@onion-architecture/infrastructure/model/booking.model";
+import { RoomModel } from "@cqrs/write/infrastructure/model/room.model";
+import { BookingModel } from "@cqrs/write/infrastructure/model/booking.model";
 
 export class HotelModel {
 	public readonly rooms: Array<RoomModel>;
