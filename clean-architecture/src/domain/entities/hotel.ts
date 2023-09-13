@@ -1,6 +1,6 @@
 import { Result } from "@sefr/result";
-import { Room } from "@clean-architecture/entities/room";
-import { Booking } from "@clean-architecture/entities/booking";
+import { Room } from "@clean-architecture/domain/entities/room";
+import { Booking } from "@clean-architecture/domain/entities/booking";
 
 export class Hotel {
 	private readonly rooms: Array<Room>;

@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { HotelPrimaryPort } from "@hexagonal-architecture/core/port/hotel.primary-port";
 import { HotelSecondaryPort } from "@hexagonal-architecture/core/port/hotel.secondary-port";
+import { BookARoomDto } from "@hexagonal-architecture/user-side/dto/book-a-room.dto";
 
 export class HotelPrimaryAdapter implements HotelPrimaryPort {
 	private readonly hotelSecondaryPort: HotelSecondaryPort;
@@ -26,7 +27,7 @@ export class HotelPrimaryAdapter implements HotelPrimaryPort {
 	}
 
 	public postBookARoom(request: Request, response: Response, next: NextFunction): void {
-		const body = <{roomNumber: number, startDate: string, endDate: string}>request.body;
+		const body = <BookARoomDto>request.body;
 		const { roomNumber, startDate, endDate } = {
 			roomNumber: body.roomNumber,
 			startDate: new Date(body.startDate || ""),

@@ -1,8 +1,8 @@
 import { HotelDatasource } from "@clean-architecture/usecase/hotel.datasource";
-import { HotelModel } from "@clean-architecture/gateway/model/hotel.model";
-import { RoomModel } from "@clean-architecture/gateway/model/room.model";
-import { BookingModel } from "@clean-architecture/gateway/model/booking.model";
-import { Hotel } from "@clean-architecture/entities/hotel";
+import { HotelModel } from "@clean-architecture/infrastructure/gateway/model/hotel.model";
+import { RoomModel } from "@clean-architecture/infrastructure/gateway/model/room.model";
+import { BookingModel } from "@clean-architecture/infrastructure/gateway/model/booking.model";
+import { Hotel } from "@clean-architecture/domain/entities/hotel";
 
 export class HotelInMemoryDatasource implements HotelDatasource {
 	private hotel: HotelModel;

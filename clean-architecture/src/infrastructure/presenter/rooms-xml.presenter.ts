@@ -1,5 +1,5 @@
-import { Presenter } from "@clean-architecture/presenter/presenter";
-import { Room } from "@clean-architecture/entities/room";
+import { Presenter } from "@clean-architecture/infrastructure/presenter/presenter";
+import { Room } from "@clean-architecture/domain/entities/room";
 
 export class RoomsXmlPresenter implements Presenter<string> {
 	public present(rooms: Array<Room>): string {

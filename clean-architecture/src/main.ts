@@ -2,7 +2,7 @@ import bodyParser from "body-parser";
 import express from "express";
 import morgan from "morgan";
 
-import { routes } from "@clean-architecture/controller";
+import { routes } from "@clean-architecture/infrastructure/controller";
 
 class Application {
 	private static readonly port = 3000;

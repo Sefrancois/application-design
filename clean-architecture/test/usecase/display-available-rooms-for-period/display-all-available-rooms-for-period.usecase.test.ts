@@ -1,5 +1,5 @@
 import { expect } from "@sefr/test";
-import { RoomsXmlPresenter } from "@clean-architecture/presenter/rooms-xml.presenter";
+import { RoomsXmlPresenter } from "@clean-architecture/infrastructure/presenter/rooms-xml.presenter";
 import { FakeHotelInMemoryDatasource } from "@clean-architecture/fake/fake-hotel-in-memory.datasource";
 import {
 	DisplayAllAvailableRoomsForPeriod

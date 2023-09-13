@@ -1,6 +1,6 @@
 import { expect } from "@sefr/test";
 import { BookARoom } from "@clean-architecture/usecase/book-a-room/book-a-room.usecase";
-import { Booking } from "@clean-architecture/entities/booking";
+import { Booking } from "@clean-architecture/domain/entities/booking";
 import { HotelDatasource } from "@clean-architecture/usecase/hotel.datasource";
 import { FakeHotelInMemoryDatasource } from "@clean-architecture/fake/fake-hotel-in-memory.datasource";
 

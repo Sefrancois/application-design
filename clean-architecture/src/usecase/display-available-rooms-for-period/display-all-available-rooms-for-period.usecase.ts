@@ -1,5 +1,5 @@
 import { Usecase } from "@clean-architecture/usecase/usecase";
-import { Presenter } from "@clean-architecture/presenter/presenter";
+import { Presenter } from "@clean-architecture/infrastructure/presenter/presenter";
 import { HotelDatasource } from "@clean-architecture/usecase/hotel.datasource";
 
 export class DisplayAllAvailableRoomsForPeriod implements Usecase<string> {

@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { HotelDao } from "@three-layers/persistence/dao/hotel.dao";
 import { HotelService } from "@three-layers/logic/hotel.service";
-import { HotelController } from "@three-layers/presentation/hotel.controller";
+import { HotelController } from "@three-layers/presentation/controller/hotel.controller";
 
 interface Route {
 	method: "get" | "post";

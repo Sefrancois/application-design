@@ -5,7 +5,7 @@ import {
 	DisplayAllAvailableRoomsForPeriod,
 } from "@onion-architecture/application-service/display-all-available-rooms-for-period.usecase";
 import { BookARoom } from "@onion-architecture/application-service/book-a-room.usecase";
-import { HotelController } from "@onion-architecture/user-interface/hotel.controller";
+import { HotelController } from "@onion-architecture/user-interface/controller/hotel.controller";
 
 interface Route {
 	method: "get" | "post";

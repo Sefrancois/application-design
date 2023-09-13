@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { HotelSecondaryAdapter } from "@hexagonal-architecture/server-side/adapter/hotel.secondary-adapter";
-import { HotelPrimaryAdapter } from "@hexagonal-architecture/user-side/hotel.primary-adapter";
+import { HotelPrimaryAdapter } from "@hexagonal-architecture/user-side/adapter/hotel.primary-adapter";
 
 interface Route {
 	method: "get" | "post";

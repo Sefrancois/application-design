@@ -1,6 +1,6 @@
 import { expect } from "@sefr/test";
 import { DisplayAllRooms } from "@clean-architecture/usecase/display-all-rooms/display-all-rooms.usecase";
-import { RoomsXmlPresenter } from "@clean-architecture/presenter/rooms-xml.presenter";
+import { RoomsXmlPresenter } from "@clean-architecture/infrastructure/presenter/rooms-xml.presenter";
 import { FakeHotelInMemoryDatasource } from "@clean-architecture/fake/fake-hotel-in-memory.datasource";
 
 describe("Clean Architecture | DisplayAllRoomsTest", () => {

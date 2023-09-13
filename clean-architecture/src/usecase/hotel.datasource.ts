@@ -1,4 +1,4 @@
-import { Hotel } from "@clean-architecture/entities/hotel";
+import { Hotel } from "@clean-architecture/domain/entities/hotel";
 
 export interface HotelDatasource {
 	getHotel(): Hotel;

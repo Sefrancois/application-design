@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { HotelService } from "@three-layers/logic/hotel.service";
+import { BookARoomDto } from "@three-layers/presentation/dto/book-a-room.dto";
 
 export class HotelController {
 	private readonly hotelService: HotelService;
@@ -23,7 +24,7 @@ export class HotelController {
 	}
 
 	public postBookARoomRequest(request: Request, response: Response, next: NextFunction): void {
-		const body = <{ roomNumber: number, startDate: string, endDate: string }>request.body;
+		const body = <BookARoomDto>request.body;
 		const { roomNumber, startDate, endDate } = {
 			roomNumber: body.roomNumber,
 			startDate: new Date(body.startDate || ""),

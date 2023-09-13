@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import { HotelInMemoryDatasource } from "@cqrs/write/infrastructure/gateway/hotel-in-memory.datasource";
 import { BookARoomCommandHandler } from "@cqrs/write/application-service/book-a-room/book-a-room.command-handler";
-import { HotelController as HotelWriteController } from "@cqrs/write/user-interface/hotel.controller";
+import { HotelController as HotelWriteController } from "@cqrs/write/user-interface/controller/hotel.controller";
 import { HotelController as HotelReadController } from "@cqrs/read/controller/hotel.controller";
 import { CommandBus } from "@cqrs/write/infrastructure/bus/command-bus";
 import { InternalEventPublisher } from "@cqrs/write/infrastructure/event/event-publisher";

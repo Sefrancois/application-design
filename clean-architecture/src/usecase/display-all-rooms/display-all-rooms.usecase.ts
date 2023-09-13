@@ -1,6 +1,6 @@
 import { HotelDatasource } from "@clean-architecture/usecase/hotel.datasource";
 import { Usecase } from "@clean-architecture/usecase/usecase";
-import { Presenter } from "@clean-architecture/presenter/presenter";
+import { Presenter } from "@clean-architecture/infrastructure/presenter/presenter";
 
 export class DisplayAllRooms implements Usecase<string> {
 	private readonly hotelDatasource: HotelDatasource;
